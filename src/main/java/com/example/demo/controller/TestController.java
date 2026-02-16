@@ -12,6 +12,10 @@ public class TestController {
         String text = null;
 
         // This will throw NullPointerException
-        return text.length() + "";
+        if (text != null) {
+            return text.length() + "";
+        } else {
+            return "";
+        }
     }
 }

@@ -11,6 +11,10 @@ public class TestController {
 
         String text = null;
 
-       return text.length() + "";
+        if (text != null) {
+            return text.length() + "";
+        } else {
+            return "";
+        }
     }
 }

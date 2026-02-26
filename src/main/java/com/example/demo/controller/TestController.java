@@ -8,7 +8,7 @@ public class TestController {
 
     @GetMapping("/test-npe")
     public String testNPE() {
-        String text = "Hello";
+        String text = null;
 
         if (text != null) {
             return text.length() + "";

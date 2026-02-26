@@ -10,10 +10,10 @@ public class TestController {
     public String testNPE() {
         String text = null;
 
-        if (text != null) {
-            return text.length() + "";
-        } else {
+        if (text == null) {
             return "";
         }
+
+        return text.length() + "";
     }
 }
